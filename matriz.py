@@ -3,6 +3,11 @@ import math
 
 caixa = 0
 
+print("-="*60)
+print("PROJETO TEATRO EM PYTHON")
+print("-="*60)
+print("Sessão de teatro!")
+
 l = int(input("Quantidade de linhas: "))
 c = int(input("Quantidade de colunas: "))
 
@@ -19,7 +24,7 @@ print(matriz_teatro)
 print()
 
 while True:
-    print("O preço de cada cadeira é de R$100,00")
+    print("O preço para venda de cada cadeira é de R$100,00")
     print()
     
     print("Qual acento o(a) senhor(a) deseja? ")
@@ -52,9 +57,9 @@ while True:
                 caixa += preco_cadeira * 0.7
                 matriz_teatro[fileira][coluna] = "V"
                 
-    sair = input("Quer sair -- sim / nao: ")
+    sair = input("Deseja continuar? -- sim / nao: ")
     
-    if sair == "sim":
+    if sair == "nao":
         cont = 0
         for i in range(l):
             for j in range(c):
@@ -71,4 +76,4 @@ while True:
         
         
 print(matriz_teatro)
-print(caixa)
+print("R$" + caixa)
