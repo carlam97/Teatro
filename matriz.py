@@ -76,4 +76,4 @@ while True:
         
         
 print(matriz_teatro)
-print("R$" + caixa)
+print(caixa)
